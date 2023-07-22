@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    @Binding var titleOn: Bool
+    @AppStorage("isTitleOn") var isTitleOn: Bool = false
     @State private var showMem = false
     @State private var sliderValue: Double = 0
     @State private var toggler = true
@@ -36,6 +39,21 @@ struct SettingsView: View {
         Form {
             
             Section {
+                Text("Текущее оформление: " + (colorScheme == .dark ? "темное" : "светлое"))
+            }
+            
+            Section {
+                
+                Toggle("Показывать заголовок основного раздела", isOn: $isTitleOn)
+                    .onChange(of: isTitleOn) { _titleOn in
+                        titleOn  = _titleOn
+                        print("Новое значение для юзер деволтс - \(String(describing: isTitleOn))")
+                    }
+                   
+                Text("Заголовок" + (isTitleOn ? " активирован" : " отключен"))
+            }
+            
+            Section {
                 Toggle("Показать мем", isOn: $showMem)
                 if showMem {
                     Image("mem")
@@ -60,12 +78,18 @@ struct SettingsView: View {
                     Text(item)
                 }
             }
+            
+            Picker("Изменить цвет фона", selection: $selectedColor) {
+                ForEach(colorsForBackgroung, id: \.self) { item in
+                    Text(item)
+                }
+            }
+            
         }
         .background(backColor)
         .scrollContentBackground(.hidden)
         
     }
-    
     
     func text(forScore: Int) -> String {
         switch forScore {
@@ -93,7 +117,7 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView( titleOn: .constant(true))
     }
 }
 
