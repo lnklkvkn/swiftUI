@@ -11,7 +11,6 @@ struct SettingsView: View {
     
     @Environment(\.colorScheme) var colorScheme
     @Binding var titleOn: Bool
-    @AppStorage("isTitleOn") var isTitleOn: Bool = false
     @State private var showMem = false
     @State private var sliderValue: Double = 0
     @State private var toggler = true
@@ -43,14 +42,9 @@ struct SettingsView: View {
             }
             
             Section {
-                
-                Toggle("Показывать заголовок основного раздела", isOn: $isTitleOn)
-                    .onChange(of: isTitleOn) { _titleOn in
-                        titleOn  = _titleOn
-                        print("Новое значение для юзер деволтс - \(String(describing: isTitleOn))")
-                    }
+                Toggle("Показывать заголовок основного раздела", isOn: $titleOn)
                    
-                Text("Заголовок" + (isTitleOn ? " активирован" : " отключен"))
+                Text("Заголовок" + (titleOn ? " активирован" : " отключен"))
             }
             
             Section {
