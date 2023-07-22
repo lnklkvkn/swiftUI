@@ -11,6 +11,7 @@ struct InfoDetailsView: View {
     
     var post: Post
     
+    
     var body: some View {
         
         ScrollView {
@@ -31,6 +32,7 @@ struct InfoDetailsView: View {
             }
             .padding()
         }
+        
         .navigationTitle(post.title)
     }
 }

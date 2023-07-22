@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct SwiftUIEducationApp: App {
+    
+    @State var titleOn: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(titleOn: titleOn)
+                .preferredColorScheme(.dark)
         }
     }
 }
