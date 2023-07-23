@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD2658C82A6CBC4C00B2A3DC /* Citates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2658C72A6CBC4C00B2A3DC /* Citates.swift */; };
 		FD6BAE242A5C7A7500102629 /* SwiftUIEducationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BAE232A5C7A7500102629 /* SwiftUIEducationApp.swift */; };
 		FD6BAE282A5C7A7A00102629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6BAE272A5C7A7A00102629 /* Assets.xcassets */; };
 		FD6BAE2B2A5C7A7A00102629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6BAE2A2A5C7A7A00102629 /* Preview Assets.xcassets */; };
@@ -17,10 +18,11 @@
 		FD6BAE3E2A5C8A5500102629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BAE3D2A5C8A5500102629 /* ContentView.swift */; };
 		FD6BAE402A5C8ACC00102629 /* InfoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6BAE3F2A5C8ACC00102629 /* InfoDetailsView.swift */; };
 		FDC6DB5F2A5D36F0001951E0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6DB5E2A5D36F0001951E0 /* SettingsView.swift */; };
-		FDC6DB612A5D3707001951E0 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6DB602A5D3707001951E0 /* HelloView.swift */; };
+		FDC6DB612A5D3707001951E0 /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC6DB602A5D3707001951E0 /* QuotesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD2658C72A6CBC4C00B2A3DC /* Citates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citates.swift; sourceTree = "<group>"; };
 		FD6BAE202A5C7A7500102629 /* SwiftUIEducation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIEducation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6BAE232A5C7A7500102629 /* SwiftUIEducationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIEducationApp.swift; sourceTree = "<group>"; };
 		FD6BAE272A5C7A7A00102629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,7 +34,7 @@
 		FD6BAE3D2A5C8A5500102629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD6BAE3F2A5C8ACC00102629 /* InfoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetailsView.swift; sourceTree = "<group>"; };
 		FDC6DB5E2A5D36F0001951E0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		FDC6DB602A5D3707001951E0 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		FDC6DB602A5D3707001951E0 /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 				FD6BAE3F2A5C8ACC00102629 /* InfoDetailsView.swift */,
 				FD6BAE3D2A5C8A5500102629 /* ContentView.swift */,
 				FDC6DB5E2A5D36F0001951E0 /* SettingsView.swift */,
-				FDC6DB602A5D3707001951E0 /* HelloView.swift */,
+				FDC6DB602A5D3707001951E0 /* QuotesView.swift */,
 				FD6BAE3B2A5C896700102629 /* InfoRowView.swift */,
 				FDC6DB622A5D3853001951E0 /* DataModel */,
 				FD6BAE272A5C7A7A00102629 /* Assets.xcassets */,
@@ -92,6 +94,7 @@
 			children = (
 				FD6BAE372A5C819800102629 /* PostModel.swift */,
 				FD6BAE352A5C809F00102629 /* Post.swift */,
+				FD2658C72A6CBC4C00B2A3DC /* Citates.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -166,7 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC6DB612A5D3707001951E0 /* HelloView.swift in Sources */,
+				FDC6DB612A5D3707001951E0 /* QuotesView.swift in Sources */,
+				FD2658C82A6CBC4C00B2A3DC /* Citates.swift in Sources */,
 				FD6BAE3A2A5C887900102629 /* InfoView.swift in Sources */,
 				FDC6DB5F2A5D36F0001951E0 /* SettingsView.swift in Sources */,
 				FD6BAE362A5C809F00102629 /* Post.swift in Sources */,

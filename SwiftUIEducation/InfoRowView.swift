@@ -14,10 +14,11 @@ struct InfoRowView: View {
         HStack {
             post.image
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
                 .clipShape(Circle())
-                .frame(width: 80, height: 80)
-//                .padding(.leading, 10)
+                .frame(width: 60, height: 60)
+//                .padding(.leading, 12)
+               
             
             Text(post.title)
             

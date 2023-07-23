@@ -20,9 +20,9 @@ struct ContentView: View {
                     Label("Info", systemImage: "books.vertical.circle")
                 }
             
-            HelloView()
+            QuotesView()
                 .tabItem {
-                    Label("Hello", systemImage: "globe")
+                    Label("Quotes", systemImage: "character.bubble")
                 }
             
             SettingsView(titleOn: $titleOn)
@@ -33,8 +33,8 @@ struct ContentView: View {
     }
 }
 
-//struct ContentView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ContentView()
-//    }
-//}
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

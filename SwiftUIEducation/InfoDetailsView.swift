@@ -18,8 +18,8 @@ struct InfoDetailsView: View {
             post.image
                 .resizable()
                 .scaledToFit()
-                .padding(.top, 12)
-                .shadow(radius: 10)
+                .shadow(color: .red, radius: 15)
+                .padding(.top)
             
             VStack(alignment: .leading) {
                 Text(post.title)
@@ -33,7 +33,7 @@ struct InfoDetailsView: View {
             .padding()
         }
         
-        .navigationTitle(post.title)
+//        .navigationTitle(post.title)
     }
 }
 
